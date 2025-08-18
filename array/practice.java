@@ -1,0 +1,73 @@
+package array;
+
+import array.pack.MyArray;
+import array.pack.MyArrayBasic;
+
+public class practice {
+    static private void arrayBasic_demo_1() {
+        MyArrayBasic demo = new MyArrayBasic(7, 6, 8, 1, 2, 3);
+        System.out.println(demo);
+    }
+
+    static private void arrayBasic_demo_2() {
+        MyArrayBasic demo = new MyArrayBasic();
+        demo.insert_unordered(9, 0);
+        demo.insert_unordered(7, 0);
+        demo.insert_unordered(5, 0);
+        System.out.println(demo);
+        System.out.println("5 is at " + demo.find(5));
+        System.out.println("Get At 1 "+ demo.getAt(1));
+    }
+
+    static void arrayBasic_demo_3() {
+        MyArrayBasic demo = new MyArrayBasic();
+        demo.add(3);
+        demo.add(7);
+        demo.add(5);
+        demo.add(4);
+        demo.add(6);
+        System.out.println("next add operation trickers ArrayIndexOutOfBoundsException");
+        demo.add(1);
+    }
+
+    static void array_demo_4() {
+        MyArray demo = new MyArray(5);
+        demo.delete(0);
+        demo.add(3);
+        demo.add(7);
+        demo.add(5);
+        demo.add(4);
+        demo.add(6);
+        demo.add(1);
+        System.out.println(demo);
+    }
+
+    static void array_demo_5(){
+        MyArray demo = new MyArray();
+        demo.insert_unordered(0,9); 
+        demo.insert_unordered(0,7);
+        demo.insert_unordered (0,8); // illegal skipped demo. insert_unordered (index:0,d:5);
+        System.out.println(demo );
+        demo.insert(8);
+        System.out.println("5 is at " + demo.binarySearch(5));
+        System.out.println("4 is at " + demo.binarySearch(4)); // return -1 bec. insertion pos for 4 is (-1 +1) * -1 = 0
+        int pos = demo.binarySearch(6);
+        System.out.println("6 is at " + pos); demo.insert_unordered(6, -(pos+1));
+        // retrurn -2 bec. insertion pos for 6 is (-2 +1) * -1 = 1
+        //[5, 6, 7, 8, 91
+        System.out.println( demo );
+    }
+
+    public static void main(String[] args) {
+        System.out.println("calling demo_1");
+        arrayBasic_demo_1();
+        System.out.println("calling demo_2");
+        arrayBasic_demo_2();
+        System.out.println("calling demo_3");
+        arrayBasic_demo_3();
+        System.out.println("calling demo_4");
+        array_demo_4();
+        System.out.println("calling demo_5");
+        array_demo_5();
+    }
+}
