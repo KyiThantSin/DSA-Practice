@@ -3,7 +3,7 @@ package array.pack;
 public class MyArray extends MyArrayBasic {
     public MyArray(int capacity){
         super(capacity);
-        MAX_SIZE = capacity;
+        MAX_SIZE = capacity; // from parent
         data = new int[MAX_SIZE]; // override
     }
 

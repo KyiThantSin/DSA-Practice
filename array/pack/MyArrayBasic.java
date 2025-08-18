@@ -1,7 +1,7 @@
 package array.pack;
 
 public class MyArrayBasic {
-    protected int MAX_SIZE = 5;
+    protected int MAX_SIZE = 5; // instacne variable not local
     protected int size = 0;
     protected int[] data = new int[MAX_SIZE];
 
