@@ -105,4 +105,29 @@ public class MyTrickyLinkedList extends MyLinkedList {
         }
         return true;
     }
+
+    public void q4_add_one(){
+        if(head == null){
+            return;
+        }
+
+        q2_reverse();
+
+        int carry = 1;
+        Node prev = null; // for last leftover carry 1 
+        Node current = head;
+        while(current != null){
+            int sum = current.data + carry;
+            current.data = sum % 10;
+            carry = sum / 10;
+            prev = current;
+            current = current.next;
+        }
+
+        if(carry > 0){
+            prev.next = new Node(carry);
+        }
+
+        q2_reverse();
+    }
 }

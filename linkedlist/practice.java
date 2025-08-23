@@ -59,20 +59,20 @@ public class practice {
         lis.q3_remove_dup();
         System.out.println("after-> " + lis);
     }
-    // static void q4() {
-    //     int [] d = {1,9,9,9};
-    //     MyTrickyLinkedList lis = new MyTrickyLinkedList();
-    //     lis.insert(d);
-    //     System.out.println("before -> " + lis);
-    //     lis.q4_add_one();
-    //     System.out.println("after-> " + lis);
-    //     int [] e = {9,9,9,9};
-    //     lis = new MyTrickyLinkedList();
-    //     lis.insert(e);
-    //     System.out.println("before -> " + lis);
-    //     lis.q4_add_one();
-    //     System.out.println("after-> " + lis);
-    // }
+    static void q4() {
+        int [] d = {1,9,9,9};
+        MyTrickyLinkedList lis = new MyTrickyLinkedList();
+        lis.insert(d);
+        System.out.println("before -> " + lis);
+        lis.q4_add_one();
+        System.out.println("after-> " + lis);
+        int [] e = {9,9,9,9};
+        lis = new MyTrickyLinkedList();
+        lis.insert(e);
+        System.out.println("before -> " + lis);
+        lis.q4_add_one();
+        System.out.println("after-> " + lis);
+    }
     static void q5() {
         boolean isTrue;
         int [] d = {21, 33, 33, 21};
@@ -102,8 +102,8 @@ public class practice {
         q2();
         System.out.println("calling q3");
         q3();
-        // System.out.println("calling q4");
-        // q4();        
+        System.out.println("calling q4");
+        q4();        
         System.out.println("calling q5");
         q5(); 
     }
