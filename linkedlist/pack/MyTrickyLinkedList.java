@@ -88,4 +88,21 @@ public class MyTrickyLinkedList extends MyLinkedList {
             }
         }
     }
+
+    public boolean q5_isPalindrome(){
+        int size = size();
+        int[] arr = new int[size];
+        Node current = head;
+        for(int i =0; i < size; i++){
+            arr[i] = current.data;
+            current= current.next;
+        }
+
+        for(int i=0; i < size / 2; i++){
+            if(arr[i] != arr[size-1 - i]){
+                return false;
+            }
+        }
+        return true;
+    }
 }

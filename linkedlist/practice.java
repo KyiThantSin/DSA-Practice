@@ -73,24 +73,24 @@ public class practice {
     //     lis.q4_add_one();
     //     System.out.println("after-> " + lis);
     // }
-    // static void q5() {
-    //     boolean isTrue;
-    //     int [] d = {21, 33, 33, 21};
-    //     MyTrickyLinkedList lis = new MyTrickyLinkedList();
-    //     lis.add(d);
-    //     isTrue = lis.q5_isPalindrome();
-    //     System.out.println(lis + " isPalindrome= " + isTrue);
-    //     int [] e = {21,33,44,33,21};
-    //     lis = new MyTrickyLinkedList();
-    //     lis.add(e);
-    //     isTrue = lis.q5_isPalindrome();
-    //     System.out.println(lis + " isPalindrome= " + isTrue);
-    //     int [] f = {1,9,9,9};
-    //     lis = new MyTrickyLinkedList();
-    //     lis.add(f);
-    //     isTrue = lis.q5_isPalindrome();
-    //     System.out.println(lis + " isPalindrome= " + isTrue);
-    // }
+    static void q5() {
+        boolean isTrue;
+        int [] d = {21, 33, 33, 21};
+        MyTrickyLinkedList lis = new MyTrickyLinkedList();
+        lis.add(d);
+        isTrue = lis.q5_isPalindrome();
+        System.out.println(lis + " isPalindrome= " + isTrue);
+        int [] e = {21,33,44,33,21};
+        lis = new MyTrickyLinkedList();
+        lis.add(e);
+        isTrue = lis.q5_isPalindrome();
+        System.out.println(lis + " isPalindrome= " + isTrue);
+        int [] f = {1,9,9,9};
+        lis = new MyTrickyLinkedList();
+        lis.add(f);
+        isTrue = lis.q5_isPalindrome();
+        System.out.println(lis + " isPalindrome= " + isTrue);
+    }
     public static void main(String[] args) {
         System.out.println("calling demo_1");
         demo_1();
@@ -104,7 +104,7 @@ public class practice {
         q3();
         // System.out.println("calling q4");
         // q4();        
-        // System.out.println("calling q5");
-        // q5(); 
+        System.out.println("calling q5");
+        q5(); 
     }
 }
