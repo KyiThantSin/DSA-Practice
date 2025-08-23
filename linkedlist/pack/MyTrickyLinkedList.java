@@ -11,7 +11,7 @@ public class MyTrickyLinkedList extends MyLinkedList {
         }
 
         Node current = head;
-        while(current != null && newNode.data > current.next.data ){
+        while(current.next != null && newNode.data > current.next.data ){
             current = current.next;
         }
         
@@ -72,5 +72,20 @@ public class MyTrickyLinkedList extends MyLinkedList {
         }
 
         head = prev;     
+    }
+
+    public void q3_remove_dup(){
+        if(head == null){
+            return;
+        }
+
+        Node current = head;
+        while(current != null && current.next != null){
+            if(current.data == current.next.data){
+                current.next = current.next.next;
+            }else{
+                current = current.next;
+            }
+        }
     }
 }

@@ -105,7 +105,7 @@ public class MyLinkedList {
         }
 
         Node current = head;
-        while (current != null) {
+        while (current.next != null) {
             if (current.next.data == value) {
                 current.next = current.next.next;
                 return;
