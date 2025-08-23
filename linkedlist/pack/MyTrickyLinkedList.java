@@ -57,4 +57,20 @@ public class MyTrickyLinkedList extends MyLinkedList {
         head = newHead;
     }
 
+    public void q2_reverse(){
+        if(head == null || head.next == null) return;
+
+        Node current = head;
+        Node prev = null;
+        Node next = null;
+
+        while(current != null){
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        head = prev;     
+    }
 }
