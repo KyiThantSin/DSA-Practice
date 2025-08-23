@@ -90,6 +90,8 @@ public class MyTrickyLinkedList extends MyLinkedList {
     }
 
     public boolean q5_isPalindrome(){
+        if(head == null) return true;
+        
         int size = size();
         int[] arr = new int[size];
         Node current = head;
