@@ -25,18 +25,18 @@ public class practice {
         lis.insert(new int[]{8,2});
         System.out.println(lis + " size= " + lis.size());
     }
-    // static void q1() {
-    //     int [] d = {10,20,30,40,50};
-    //     MyTrickyLinkedList lis = new MyTrickyLinkedList();
-    //     lis.insert(d);
-    //     System.out.println("before -> " + lis);
-    //     lis.q1_rotate_clockwise(4);
-    //     System.out.println("(k= " + 4 + ") -> " + lis);
-    //     lis.q1_rotate_clockwise(7);
-    //     System.out.println("(k= " + 7 + ") -> " + lis);
-    //     lis.q1_rotate_clockwise(1);
-    //     System.out.println("(k= " + 1 + ") -> " + lis); 
-    // }
+    static void q1() {
+        int [] d = {10,20,30,40,50};
+        MyTrickyLinkedList lis = new MyTrickyLinkedList();
+        lis.insert(d);
+        System.out.println("before -> " + lis);
+        lis.q1_rotate_clockwise(4);
+        System.out.println("(k= " + 4 + ") -> " + lis);
+        lis.q1_rotate_clockwise(7);
+        System.out.println("(k= " + 7 + ") -> " + lis);
+        lis.q1_rotate_clockwise(1);
+        System.out.println("(k= " + 1 + ") -> " + lis); 
+    }
     // static void q2() {
     //     int [] d = {1,2,3,4,5,6,7,8};
     //     MyTrickyLinkedList lis = new MyTrickyLinkedList();
@@ -96,8 +96,8 @@ public class practice {
         demo_1();
         System.out.println("calling demo_2");
         demo_2(); 
-        // System.out.println("calling q1");
-        // q1();
+        System.out.println("calling q1");
+        q1();
         // System.out.println("calling q2");
         // q2();
         // System.out.println("calling q3");
